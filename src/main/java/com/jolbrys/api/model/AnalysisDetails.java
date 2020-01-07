@@ -1,4 +1,4 @@
-package com.jolbrys.api;
+package com.jolbrys.api.model;
 
 public class AnalysisDetails {
 

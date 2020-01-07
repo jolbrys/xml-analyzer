@@ -2,7 +2,9 @@
 * This is xml handling class made by refactoring code from this tutorial: https://www.vogella.com/tutorials/JavaXML/article.html
 * */
 
-package com.jolbrys.api;
+package com.jolbrys.api.utils;
+
+import com.jolbrys.api.model.Row;
 
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
@@ -26,7 +28,7 @@ public class StaXParser {
 
     static final String ID = "Id";
     static final String POST_TYPE_ID = "PostTypeId";
-        static final String ACCEPTED_ANSWER_ID ="AcceptedAnswerId";
+    static final String ACCEPTED_ANSWER_ID ="AcceptedAnswerId";
     static final String CREATION_DATE = "CreationDate";
     static final String SCORE = "Score";
     static final String VIEW_COUNT = "ViewCount";
@@ -34,7 +36,7 @@ public class StaXParser {
     static final String COMMENT_COUNT = "CommentCount";
 
     @SuppressWarnings({ "unchecked", "null" })
-    public List<Row> readConfig(String filepath_url) {
+    public static List<Row> read(String filepath_url) {
         List<Row> rows = new ArrayList<Row>();
         try {
             // First, create a new XMLInputFactory
