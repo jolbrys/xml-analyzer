@@ -17,7 +17,7 @@ public class AnalysisDetails {
     @Override
     public String toString() {
         return "Details: " +
-                "\nfirs post= " + firstPost +
+                "\nfirst post= " + firstPost +
                 "\nlast post= " + lastPost +
                 "\ntotal posts= " + totalPosts +
                 "\ntotal accepted posts= " + totalAcceptedPosts +

@@ -16,7 +16,7 @@ public class Row {
         return "Row: " +
                 "\nId= " + id +
                 "\nPostTypeId= " + postTypeId +
-                "\nParentId= " + acceptedAnswerId +
+                "\nAcceptedAnswerId= " + acceptedAnswerId +
                 "\nCreationDate= " + creationDate +
                 "\nScore= " + score +
                 "\nViewCount= " + viewCount +
@@ -45,8 +45,8 @@ public class Row {
         return acceptedAnswerId;
     }
 
-    public void setAcceptedAnswerId(String parentId) {
-        this.acceptedAnswerId = parentId;
+    public void setAcceptedAnswerId(String acceptedAnswerId) {
+        this.acceptedAnswerId = acceptedAnswerId;
     }
 
     public String getCreationDate() {
